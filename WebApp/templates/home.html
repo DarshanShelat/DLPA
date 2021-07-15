@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>	
+	<body>
+		<h1>Upload your image here.</h1>
+
+		<form action="ImgUp/imageprocess" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<input id="image" type="file" name="image/">
+			<input type="submit" value="Submit">			
+		</form>
+	</body>
+</html>
+
